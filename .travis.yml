@@ -2,7 +2,8 @@ dist: focal
 language: python
 python:
   - "3.9"
+# command to install dependencies
 install:
   - pip install -r requirements.txt
-script:
-  - python -m unittest
+# command to run tests
+script: ./tests.py
